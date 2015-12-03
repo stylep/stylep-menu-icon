@@ -1,6 +1,13 @@
 /* @import stylep-button; */
 @import '../index.css';
 
+button {
+  border: 0;
+  cursor: pointer;
+  background: initial;
+  outline: initial;
+}
+
 .menu-icon {
   @mixin menu-icon;
 }
