@@ -1,0 +1,15 @@
+/* @import stylep-button; */
+@import '../index.css';
+
+.menu-icon {
+  @mixin menu-icon;
+}
+
+.menu-icon--small {
+  @mixin menu-icon blue, magenta, 5px;
+}
+
+.menu-icon--large {
+  @mixin menu-icon green, pink, 100px;
+}
+

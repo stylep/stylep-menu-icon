@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+        <link rel="stylesheet" href="build/index.css">
+        <title>stylep-menu-icon/example</title>
+        <script>
+                document.querySelector('.menu-icon').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        [].map.call(document.querySelectorAll('.menu-icon'), function(el) {
+                                el.classList.toggle('');
+                        });
+                });
+        </script>
+</head>
+<body>
+        <h1>stylep-menu-icon/example</h1>
+
+        <button class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>
+
+        <button class="menu-icon--small">
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>
+
+        <button class="menu-icon--large">
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>
+</body>
+
