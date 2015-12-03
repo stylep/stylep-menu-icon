@@ -1,11 +1,12 @@
 @define-mixin menu-icon
   $color-passive: #000, 
-  $color-active: #000,
-  $size: 14px {
+  $color-activated: #000,
+  $size: 14px,
+  $class: :focus {
 
-  &:focus {
+  &$(class) {
     & span {
-      background-color: $color-active;
+      background-color: $color-activated;
 
       &:first-child { transform: translateY(calc($size / 2.33)) rotate(45deg); }
 
