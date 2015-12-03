@@ -1,0 +1,29 @@
+@define-mixin menu-icon
+  $color-passive: #000, 
+  $color-hover: $color-passive,
+  $size: 14px {
+
+  &[aria-live='polite'] {
+    & span {
+
+      &:first-child { transform: translateY(calc($size / 2.33)) rotate(45deg); }
+
+      &:nth-child(2) { opacity: 0; }
+
+      &:last-child { transform: translateY(calc($size / -2.33)) rotate(-45deg); }
+    }
+  }
+
+  & span {
+    background: $color-passive;
+    display: block;
+    border-radius: 3px;
+    height: calc($size / 7);
+    transform-origin: center;
+    transition: .3s ease;
+    width: calc($size * 1.43);
+
+    &:nth-child(2) { margin: calc($size / 3.5) 0; }
+  }
+}
+
