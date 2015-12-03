@@ -1,4 +1,4 @@
-/* @import stylep-button; */
+/* @import stylep-menu-icon; */
 
 button {
   border: 0;
@@ -95,5 +95,35 @@ button {
 
 .menu-icon--large span:nth-child(2) {
   margin: calc(100px / 3.5) 0;
+}
+
+.menu-icon--class.active span {
+  background-color: magenta;
+}
+
+.menu-icon--class.active span:first-child {
+  transform: translateY(calc(50px / 2.33)) rotate(45deg);
+}
+
+.menu-icon--class.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon--class.active span:last-child {
+  transform: translateY(calc(50px / -2.33)) rotate(-45deg);
+}
+
+.menu-icon--class span {
+  background-color: purple;
+  display: block;
+  border-radius: 3px;
+  height: calc(50px / 7);
+  transform-origin: center;
+  transition: .3s ease;
+  width: calc(50px * 1.43);
+}
+
+.menu-icon--class span:nth-child(2) {
+  margin: calc(50px / 3.5) 0;
 }
 

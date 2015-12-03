@@ -1,4 +1,4 @@
-/* @import stylep-button; */
+/* @import stylep-menu-icon; */
 @import '../index.css';
 
 button {
@@ -18,5 +18,9 @@ button {
 
 .menu-icon--large {
   @mixin menu-icon green, pink, 100px;
+}
+
+.menu-icon--class {
+  @mixin menu-icon purple, magenta, 50px, .active;
 }
 
