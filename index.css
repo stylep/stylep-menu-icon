@@ -1,10 +1,11 @@
 @define-mixin menu-icon
   $color-passive: #000, 
-  $color-hover: $color-passive,
+  $color-active: #000,
   $size: 14px {
 
-  &[aria-live='polite'] {
+  &:focus {
     & span {
+      background-color: $color-active;
 
       &:first-child { transform: translateY(calc($size / 2.33)) rotate(45deg); }
 
@@ -15,7 +16,7 @@
   }
 
   & span {
-    background: $color-passive;
+    background-color: $color-passive;
     display: block;
     border-radius: 3px;
     height: calc($size / 7);
