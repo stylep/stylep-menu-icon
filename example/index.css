@@ -1,6 +1,24 @@
 /* @import stylep-menu-icon; */
 @import '../index.css';
 
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
 button {
   border: 0;
   cursor: pointer;
@@ -13,11 +31,11 @@ button {
 }
 
 .menu-icon--small {
-  @mixin menu-icon blue, magenta, 5px;
+  @mixin menu-icon #000, #555, 12px;
 }
 
 .menu-icon--large {
-  @mixin menu-icon green, pink, 100px;
+  @mixin menu-icon #000, #555, 100px;
 }
 
 .menu-icon--class {
