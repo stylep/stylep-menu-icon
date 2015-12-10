@@ -1,42 +1,61 @@
 <!doctype html>
+<html>
 <head>
-<link rel="stylesheet" href="build/index.css">
-<title>stylep-menu-icon/example</title>
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script>
-(function() {
-        $('#icon-toggle').on('click', function(e) {
-                $(this).toggleClass('active');
-                e.preventDefault();
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/index.css">
+        <title>stylep-menu-icon/example</title>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script>
+        (function() {
+                $('#icon-toggle').on('click', function(e) {
+                        $(this).toggleClass('active');
+                        e.preventDefault();
+                });
         });
-});
-</script>
+        </script>
 </head>
 <body>
         <h1>stylep-menu-icon/example</h1>
 
+        <h2>Patterns</h2>
+
+        <h3>Solid Menu Icon</h3>
+        <section>
         <button class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
         </button>
+        </section>
 
+        <h2>Styles</h2>
+
+        <h3>Small Menu Icon</h3>
+        <section>
         <button class="menu-icon--small">
                 <span></span>
                 <span></span>
                 <span></span>
         </button>
+        </section>
 
+        <h3>Large Menu Icon</h3>
+        <section>
         <button class="menu-icon--large">
                 <span></span>
                 <span></span>
                 <span></span>
         </button>
+        </section>
 
+        <h3>Customized Menu Icon</h3>
+        <section>
         <button class="menu-icon--class" id="icon-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
         </button>
+        </section>
 </body>
+</html>
 

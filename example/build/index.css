@@ -1,5 +1,23 @@
 /* @import stylep-menu-icon; */
 
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
 button {
   border: 0;
   cursor: pointer;
@@ -38,11 +56,11 @@ button {
 }
 
 .menu-icon--small:focus span {
-  background-color: magenta;
+  background-color: #555;
 }
 
 .menu-icon--small:focus span:first-child {
-  transform: translateY(calc(5px / 2.33)) rotate(45deg);
+  transform: translateY(calc(12px / 2.33)) rotate(45deg);
 }
 
 .menu-icon--small:focus span:nth-child(2) {
@@ -50,25 +68,25 @@ button {
 }
 
 .menu-icon--small:focus span:last-child {
-  transform: translateY(calc(5px / -2.33)) rotate(-45deg);
+  transform: translateY(calc(12px / -2.33)) rotate(-45deg);
 }
 
 .menu-icon--small span {
-  background-color: blue;
+  background-color: #000;
   display: block;
   border-radius: 3px;
-  height: calc(5px / 7);
+  height: calc(12px / 7);
   transform-origin: center;
   transition: .3s ease;
-  width: calc(5px * 1.43);
+  width: calc(12px * 1.43);
 }
 
 .menu-icon--small span:nth-child(2) {
-  margin: calc(5px / 3.5) 0;
+  margin: calc(12px / 3.5) 0;
 }
 
 .menu-icon--large:focus span {
-  background-color: pink;
+  background-color: #555;
 }
 
 .menu-icon--large:focus span:first-child {
@@ -84,7 +102,7 @@ button {
 }
 
 .menu-icon--large span {
-  background-color: green;
+  background-color: #000;
   display: block;
   border-radius: 3px;
   height: calc(100px / 7);
