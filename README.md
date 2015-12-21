@@ -3,8 +3,10 @@
 A simple animated menu icon that transforms into a close icon.
 
 ## Install
+You can install using the spm command or install using npm and the project name.
+
 ``` shell
-npm i --save-dev stylep-menu-icon
+spm install menu-icon
 ```
 
 ## Usage
