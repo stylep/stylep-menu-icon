@@ -11,7 +11,7 @@ spm install menu-icon
 
 ## Usage
 ``` css
-/* name.css */
+/* menu.css */
 
 @import “stylep-menu-icon”;
 
