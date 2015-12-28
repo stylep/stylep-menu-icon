@@ -18,10 +18,10 @@ spm install menu-icon
 
 .menu-icon {
 
-  /* Button Design Pattern */
+  /* Icon Design Pattern */
   @extend %menu-icon;
 
-  /* Customize your button */
+  /* Customize your icon */
   @mixin menu-icon-color param, param;
 
   /* or roll your own */
