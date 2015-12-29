@@ -12,17 +12,14 @@ spm install menu-icon
 
 ## Usage
 ``` css
-/* menu.css */
+/* menu-icon.css */
 
 @import “stylep-menu-icon”;
 
 .menu-icon {
 
-  /* Icon Design Pattern */
-  @extend %menu-icon;
-
   /* Customize your icon */
-  @mixin menu-icon-color param, param;
+  @mixin menu-icon #000, #999, 3px, 14px, .3s;
 
   /* or roll your own */
 
@@ -30,27 +27,19 @@ spm install menu-icon
 }
 ```
 
-## Patterns
-Placeholder selectors that contain common styles for structure and basic behavior.
-
-#### `@extend %menu-icon;`
-Describe what this pattern does.
-
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### name-of-style
-Describe the visual look and feel of this style.
+#### `menu-icon`
+Draws three bars that look like a menu icon.
 
 ##### Options
 
-* `$param-name: default-value` Describe what this does
-
-##### Example
-```css
-/* describe in english what this following statement really means in detail */
-@mixin menu-icon-color default-value;
-```
+* `$menu-icon-color: #000` Color of the menu icon
+* `$menu-icon-active-color: #000` Color of the menu icon activated
+* `$menu-icon-radius: 3px` How rounded the menu icon bars are.
+* `$menu-icon-size: 14px` Relative sizing of the menu icon
+* `$menu-icon-class: :focus` The class that activates the menu-icon
 
 ## License
 This project is licensed under the MIT [license](LICENSE).

@@ -1,31 +1,31 @@
 @define-mixin menu-icon
-  $color-passive: #000, 
-  $color-activated: #000,
-  $size: 14px,
-  $class: :focus {
-
-  &$(class) {
-    & span {
-      background-color: $color-activated;
-
-      &:first-child { transform: translateY(calc($size / 2.33)) rotate(45deg); }
-
-      &:nth-child(2) { opacity: 0; }
-
-      &:last-child { transform: translateY(calc($size / -2.33)) rotate(-45deg); }
-    }
-  }
+  $menu-icon-color: #000, 
+  $menu-icon-active-color: #000,
+  $menu-icon-radius: 3px,
+  $menu-icon-size: 14px,
+  $menu-icon-duration: .3s,
+  $menu-icon-class: :focus {
 
   & span {
-    background-color: $color-passive;
+    background-color: $menu-icon-color;
     display: block;
-    border-radius: 3px;
-    height: calc($size / 7);
+    border-radius: $menu-icon-radius;
+    height: calc($menu-icon-size / 7);
     transform-origin: center;
-    transition: .3s ease;
-    width: calc($size * 1.43);
+    transition: background $menu-icon-duration ease-in-out;
+    width: calc($menu-icon-size * 1.43);
 
-    &:nth-child(2) { margin: calc($size / 3.5) 0; }
+    &:nth-child(2) { margin: calc($menu-icon-size / 3.5) 0; }
+  }
+
+  &$(menu-icon-class) {
+    & span {
+      background-color: $menu-icon-active-color;
+
+      &:first-child { transform: translateY(calc($menu-icon-size / 2.33)) rotate(45deg); }
+      &:last-child { transform: translateY(calc($menu-icon-size / -2.33)) rotate(-45deg); }
+      &:nth-child(2) { opacity: 0; }
+    }
   }
 }
 
