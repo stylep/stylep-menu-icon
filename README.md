@@ -21,8 +21,6 @@ spm install menu-icon
   /* Customize your icon */
   @mixin menu-icon #000, #999, 3px, 14px, .3s;
 
-  /* or roll your own */
-
   /* add something custom in here */
 }
 ```
